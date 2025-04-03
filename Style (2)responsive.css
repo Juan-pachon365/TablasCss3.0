@@ -1,0 +1,99 @@
+h1 {
+    color: rgb(65, 6, 65); /*Titulo de la pagina*/
+}
+h1 {
+    background-color: rgb(145, 139, 139); /* Es el fondo del titulo de la pagina*/
+}
+h2 {
+    color: rgb(65, 6, 65);
+}
+h2 {
+    background-color: rgb(145, 139, 139);
+}
+
+section  {
+    background-color: rgb(77, 49, 126);
+}
+body {
+    background-color: rgb(185, 184, 188); /*Cambia el fondo del documento*/
+}
+nav ul {
+    list-style-type: none; 
+}
+
+a {
+    color: rgb(174, 138, 174); /*Color del link por default*/
+    text-decoration: none;/*Quita la linea que hay debajo de la url*/
+}
+
+a:hover {
+    color:rgb(15, 130, 65); /*el color que subraya las palabras*/
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+image-container img {
+    width: 400px;
+    display: block;
+}
+image-container a {
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse; /*Elimina los espacios en los bordes */
+}
+
+table, th, td {
+    border: 1px solid whitesmoke; /*Bordes blancos para la tabla */
+}
+
+th, td {
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+th {
+    color:rgb(163, 155, 165);
+}
+
+@media (max-width: 600px) { /*Diseña la tabla para dispositivos moviles */
+
+    table, thead, tbody, th, td, tr {
+        display: block; /*Convierte la tabla en un diseño de bloques */
+    }
+
+    thead tr {
+        display: none; /* Oculta la cabecera de la tabla en pantallas pequeñas*/
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    td {
+        text-align: left;
+        position: relative;
+        padding-left: 50%;/*Desplaza el contenido para espacio del pseudo-elemento */
+    }
+
+    td:before {
+        content: attr(data-label); /*Muestra el nombre del atributo como etiqueta */
+        position: absolute; /*Pocisiona el texto */
+        left: 10px;
+        font-weight: bold;
+    }
+}
+
+   
+    
+    
+    
+    
